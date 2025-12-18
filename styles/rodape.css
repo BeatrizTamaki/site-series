@@ -1,0 +1,136 @@
+.sugestao{
+    background-color: var(--branco);
+    margin: 3rem;
+    border: 5px solid var(--roxo);
+    border-radius: 24px;
+    padding: .5em;
+    text-align: center;
+}
+
+.sugestao_titulo{
+    color: var(--preto);
+    font-size: 20px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.sugestao__pesquisa{
+    background: transparent;
+    color: var(--preto);
+    border: 4px solid var(--roxo);
+    border-radius: 24px;
+    padding: 0.5em;
+    width: 70%;
+}
+
+.sugestao__pesquisa::placeholder{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    background-position: 1em;
+}
+
+.rodape{
+    background-color: var(--roxo);
+    padding: 1rem 0;
+}
+
+.titulo_rodape{
+    color: var(--branco);
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contato{
+   color: var(--branco);
+   text-decoration: none;
+}
+
+.icone{
+    width: 30px;
+    height: 30px;
+}
+
+@media (min-width: 768px){
+
+    .detalhes_img_sinopse{
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 2rem;
+    }
+
+    .imagem_detalhes{
+        max-width: 320px;
+    }
+
+    .detalhes_sinopse{
+        font-size: 18px;
+    }
+
+    .sugestao{
+        margin: 2.5rem;
+    }
+
+    .sugestao__pesquisa{
+        width: 75%;
+    }
+
+    .redes{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1024px){
+
+    .detalhes{
+        margin: 2rem 4rem;
+    }
+
+    .detalhes_titulo{
+        text-align: left;
+        padding-left: 5rem;
+    }
+
+    .detalhes_img_sinopse{
+        padding-left: 5rem;
+        gap: 3rem;
+    }
+
+    .imagem_detalhes{
+        max-width: 350px;
+    }
+
+    .sinopse_titulo{
+        font-size: 26px;
+    }
+
+    .detalhes_sinopse{
+        font-size: 20px;
+    }
+
+    .sugestao{
+        margin: 3rem 6rem;
+    }
+
+    .sugestao__pesquisa{
+        width: 60%;
+    }
+
+    .titulo_rodape{
+        font-size: 25px;
+    }
+
+    .icone{
+        width: 32px;
+        height: 32px;
+    }
+}
+

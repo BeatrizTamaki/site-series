@@ -1,0 +1,43 @@
+
+@import url("styles/carrossel.css");
+@import url("styles/menu.css");
+@import url("styles/detalhes.css");
+@import url("styles/genero.css");
+@import url("styles/rodape.css");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* cores */
+    --azul: #1E90FF;
+    --azul-claro: #87CEFA;
+    --azul-escuro: #00008B;
+    --cinza: #A9A9A9;
+    --branco: white;
+    --preto: black;
+    --vermelho: red;
+    --roxo: rgb(194, 85, 194);
+    --roxo-escuro: #6A5ACD;
+
+    /* fontes */
+
+    --fonte-primaria:'Work Sans', sans-serif;
+    --fonte-secundaria:"Playwrite NO", cursive;
+}
+
+body{
+   background-color: black;
+   font-size: 16px;
+   font-family: var(--fonte-primaria);
+   font-weight: 400;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Series</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- TITULO E MENU HAMBURGUER -->
+    <header class="cabecalho"> 
+        <h1 class="titulo">Melhores Séries</h1> 
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista__menu">
+                <li class="lista__menu-titulo">Categorias</li>
+                
+                <li class="lista__menu-item">
+                    <a href="#" class="lista__menu-link" data-alvo="carrossel">Séries</a>
+                </li>
+                <li class="lista__menu-item">
+                    <a href="#" class="lista__menu-link" data-alvo="detalhes">Sinopses</a>
+                </li>
+                <li class="lista__menu-item">
+                    <a href="#" class="lista__menu-link" data-alvo="sugestao">Sugestões</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- GENEROS DE PREFERENCIA -->
+    <div class="genero">
+        <h2 class="subtitulo" >Escolha abaixo o seu gênero preferido</h2>
+    </div>    
+
+    <div class="categorias">
+        <a href="#" class="categoria"  data-alvo="drama">Drama</a> 
+        <a href="#" class="categoria" data-alvo="fantasia">Fantasia</a> 
+        <a href="#" class="categoria" data-alvo="misterio">Misterio</a> 
+        <a href="#" class="categoria" data-alvo="acao">Ação</a> 
+        <a href="#" class="categoria" data-alvo="aventura">Aventura</a> 
+        <a href="#" class="categoria" data-alvo="suspense">Suspense</a>
+    </div>     
+    
+    <!-- CARROSSEL DE SERIES -->
+    <section class="carrossel" id="carrossel">
+        <h2 class="carrossel__titulo">TOP 6 SÉRIES INDICADAS</h2>
+        <div class="carrossel__container">
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/DonosdoJogo.jpeg" alt="DonosdoJogo">
+
+                        <div class="sinopse">
+                            <p>Explora as disputas de poder entre quatro famílias rivais que controlam o Jogo do Bicho no Rio de Janeiro, focando na ascensão do ambicioso "Profeta"</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/Euforia.jpeg" alt="Euforia">
+
+                        <div class="sinopse">
+                            <p>Um grupo de estudantes do ensino médio em uma cidade fictícia, focando na jornada de Rue Bennett (Zendaya), uma jovem viciada em drogas que tenta se manter sóbria após uma overdose</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/OnceUpon.jpeg" alt="OnceUpon">
+
+                        <div class="sinopse">
+                            <p>Uma série de fantasia onde personagens de contos de fadas (Branca de Neve, Príncipe Encantado, Rainha Má) são lançados ao nosso mundo por uma maldição para uma cidade fictícia chamada Storybrooke, no Maine, sem memórias de quem são; a única esperança para quebrar o feitiço é Emma Swan, a filha da Branca de Neve</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/PeakyBlinders.jpeg" alt="PeakyBlinders">
+
+                        <div class="sinopse">
+                            <p>Conta a história da ambiciosa família criminosa Shelby, liderada pelo inteligente e cruel Thomas Shelby (Cillian Murphy), em Birmingham, Inglaterra, após a Primeira Guerra Mundial, mostrando sua ascensão no submundo do crime, expandindo um império de apostas, contrabando e negócios ilegais</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/Riverdale.jpeg" alt="Riverdale">
+
+                        <div class="sinopse">
+                            <p>Um grupo de adolescentes (Archie, Betty, Veronica, Jughead, Cheryl) em uma cidade pacata que é abalada pela tragédia da morte de Jason Blossom. A partir daí, a série explora o mistério por trás de sua morte enquanto acompanha a vida dos mesmos</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/ShadowHunters.jpeg" alt="ShadowHunters">
+
+                        <div class="sinopse">
+                            <p>Gira em torno de Clary Fray, uma jovem que, no seu aniversário de 18 anos, descobre que é uma Caçadora de Sombras, uma humana com sangue de anjo que luta contra demônios</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/Stranger.jpeg" alt="Stranger">
+
+                        <div class="sinopse">
+                            <p>Começa com o misterioso desaparecimento do garoto Will Byers, levando sua mãe Joyce, o chefe de polícia Hopper e seus amigos (Mike, Dustin, Lucas) a desvendar segredos sobrenaturais, descobrir uma menina com poderes telecinéticos (Eleven) e uma passagem para uma dimensão sombria chamada "Mundo Invertido"</p>
+                        </div>
+                    </div>
+                    ...
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERIE EM DETALHES (SINOPSE, ONDE ASSISTIR) -->
+    <section class="detalhes" id="detalhes">
+        <div class="detalhes_container">
+            <article class="detalhe_genero">
+
+                <h2 class="detalhes_titulo" id="drama">Drama</h2>
+
+                <div class="detalhes_img_sinopse">
+                    
+                    <img class="imagem_detalhes" src="img/DonosdoJogo.jpeg" alt="DonosdoJogo">
+
+                    <div class="detalhes_sinopse">
+                        <h2 class="sinopse_titulo">Sinopse</h2>
+
+                        <p class="detalhes_paragrafo">"Os Donos do Jogo" é uma série brasileira da Netflix sobre o submundo do jogo do bicho no Rio de Janeiro, focando nas disputas de poder entre quatro famílias rivais que lutam pelo controle do império do jogo, explorando traição, luxo e ambição, com um novato ("Profeta") tentando ascender, enquanto figuras como Mirna e Suzana Guerra disputam influência em uma trama que mistura ficção com elementos da realidade carioca, incluindo ligações com escolas de samba."</p>
+
+                        <div class="Curiosidade">
+                            <h3 class="detalhes_paragrafo">Por quê assistir? </h3>
+                            <p class="detalhes_paragrafo"> ⦿ Conflitos intensos e emocionais o tempo todo</p>
+                            <p class="detalhes_paragrafo"> ⦿ Personagens complexos e cheios de camadas</p>
+                            <p class="detalhes_paragrafo"> ⦿ Drama social e humano baseado na vida real</p>
+                        </div>
+
+                        <div class="Streaming">
+                            <h3 class="detalhes_paragrafo">Onde assistir? </h3>
+                            <a href="https://www.netflix.com" target="_blank" aria-label="Abrir Netflix">
+                                <img src="img/Netflix_icon.svg.png" alt="Netflix" width="50px" height="50px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <div class="detalhes_img_sinopse">
+                    
+                    <img class="imagem_detalhes" src="img/Euforia.jpeg" alt="Euforia">
+
+                    <div class="detalhes_sinopse">
+                        <h2 class="sinopse_titulo">Sinopse</h2>
+
+                        <p class="detalhes_paragrafo">"Euphoria é uma série dramática da HBO que segue um grupo de adolescentes do ensino médio enquanto exploram temas complexos como drogas, sexo, identidade, traumas, redes sociais e relacionamentos, focando principalmente em Rue Bennett (Zendaya), uma jovem que luta contra a dependência química após uma overdose, e sua amizade (e romance) com Jules (Hunter Schafer), uma garota transgênero recém-chegada à cidade, tudo isso entrelaçado com as histórias de outros jovens lidando com seus próprios desafios e segredos."</p>
+
+                        <div class="Curiosidade">
+                            <h3 class="detalhes_paragrafo">Por quê assistir? </h3>
+                            <p class="detalhes_paragrafo"> ⦿ Emoções fortes e extremamente humanas</p>
+                            <p class="detalhes_paragrafo"> ⦿ Drama social atual e impactante</p>
+                            <p class="detalhes_paragrafo"> ⦿ Personagens que parecem reais (e quebrados de verdade)</p>
+                        </div>
+
+                        <div class="Streaming">
+                            <h3 class="detalhes_paragrafo">Onde assistir? </h3>
+                            <a href="https://www.hbo.com" target="_blank" aria-label="Abrir HBO">
+                                <img src="img/HBO.png" alt="HBO" width="50px" height="50px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="detalhe_genero">
+                <h2 class="detalhes_titulo" id="fantasia">FANTASIA</h2>
+                
+                <div class="detalhes_img_sinopse">
+                    
+                    <img class="imagem_detalhes" src="img/OnceUpon.jpeg" alt="OnceUpon">
+
+                    <div class="detalhes_sinopse">
+                        <h2 class="sinopse_titulo">Sinopse</h2>
+
+                        <p class="detalhes_paragrafo">"Once Upon a Time (Era uma Vez) é uma série de fantasia onde personagens de contos de fadas (Branca de Neve, Príncipe Encantado, Rainha Má) são lançados ao nosso mundo por uma maldição para uma cidade fictícia chamada Storybrooke, no Maine, sem memórias de quem são; a única esperança para quebrar o feitiço é Emma Swan, a filha da Branca de Neve, que foi poupada da maldição e precisa aceitar seu destino para salvar a todos."</p>
+
+                        <div class="Curiosidade">
+                            <h3 class="detalhes_paragrafo">Por quê assistir? </h3>
+                            <p class="detalhes_paragrafo"> ⦿ Drama emocional com toque de fantasia</p>
+                            <p class="detalhes_paragrafo"> ⦿ Personagens com passado traumático</p>
+                            <p class="detalhes_paragrafo"> ⦿ Relações complicadas o tempo todo</p>
+                        </div>
+
+                        <div class="Streaming">
+                            <h3 class="detalhes_paragrafo">Onde assistir? </h3>
+                            <a href="https://www.disney.com" target="_blank" aria-label="Abrir Disney">
+                                <img src="img/disney-plus.jpg" alt="Disney+" width="50px" height="50px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="detalhe_genero">
+                <h2 class="detalhes_titulo" id="acao">AÇÃO</h2>
+                
+                <div class="detalhes_img_sinopse">
+                   
+                    <img class="imagem_detalhes" src="img/PeakyBlinders.jpeg" alt="PeakyBlinders">
+
+                    <div class="detalhes_sinopse">
+                        <h2 class="sinopse_titulo">Sinopse</h2>
+
+                        <p class="detalhes_paragrafo">"Peaky Blinders segue a notória gangue criminosa da família Shelby em Birmingham, Inglaterra, logo após a Primeira Guerra Mundial, liderada pelo ambicioso e implacável Thomas "Tommy" Shelby, que transforma o grupo de apostadores e bandidos de rua em um império de negócios ilegais, expandindo-se para tráfico de armas, drogas e influência, enquanto enfrenta rivais, a polícia e as complexidades da política e do crime organizado no período entre guerras, tudo sob um estilo visual marcante e diálogos intensos."</p>
+
+                        <div class="Curiosidade">
+                            <h3 class="detalhes_paragrafo">Por quê assistir? </h3>
+                            <p class="detalhes_paragrafo"> ⦿ Intensidade emocional constante</p>
+                            <p class="detalhes_paragrafo"> ⦿ Personagens densos e cheios de dilemas</p>
+                            <p class="detalhes_paragrafo"> ⦿ Tragédias e tensão que movem a história</p>
+                        </div>
+
+                        <div class="Streaming">
+                            <h3 class="detalhes_paragrafo">Onde assistir? </h3>
+                            <a href="https://www.netflix.com" target="_blank" aria-label="Abrir Netflix">
+                                <img src="img/Netflix_icon.svg.png" alt="Netflix" width="50px" height="50px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="detalhe_genero">
+                <h2 class="detalhes_titulo" id="misterio">MISTÉRIO</h2>
+                
+                <div class="detalhes_img_sinopse">
+                    
+                    <img class="imagem_detalhes" src="img/Riverdale.jpeg" alt="Riverdale">
+                    <div class="detalhes_sinopse">
+                        <h2 class="sinopse_titulo">Sinopse</h2>
+
+                        <p class="detalhes_paragrafo">"A sinopse de Riverdale gira em torno de um grupo de adolescentes (Archie, Betty, Veronica, Jughead, Cheryl) em uma cidade pacata que é abalada pela tragédia da morte de Jason Blossom. A partir daí, a série explora o mistério por trás de sua morte enquanto acompanha a vida, os relacionamentos amorosos, as aspirações e os segredos dos personagens, que muitas vezes acabam se envolvendo em situações perigosas."</p>
+
+                        <div class="Curiosidade">
+                            <h3 class="detalhes_paragrafo">Por quê assistir? </h3>
+                            <p class="detalhes_paragrafo"> ⦿ Conflitos adolescentes intensos</p>
+                            <p class="detalhes_paragrafo"> ⦿ Traumas e segredos dentro da cidade</p>
+                            <p class="detalhes_paragrafo"> ⦿ Relações que vivem entre o amor e o caos</p>
+                        </div>
+
+                        <div class="Streaming">
+                            <h3 class="detalhes_paragrafo">Onde assistir? </h3>
+                            <a href="https://www.netflix.com" target="_blank" aria-label="Abrir Netflix">
+                                <img src="img/Netflix_icon.svg.png" alt="Netflix" width="50px" height="50px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="detalhe_genero">
+                <h2 class="detalhes_titulo" id="aventura">Aventura</h2>
+            
+                <div class="detalhes_img_sinopse">
+                    
+                    <img class="imagem_detalhes" src="img/ShadowHunters.jpeg" alt="ShadowHunters">
+                    <div class="detalhes_sinopse">
+                        <h2 class="sinopse_titulo">Sinopse</h2>
+
+                        <p class="detalhes_paragrafo">"A sinopse de Shadowhunters gira em torno de Clary Fray, uma jovem que, no seu aniversário de 18 anos, descobre que é uma Caçadora de Sombras, uma humana com sangue de anjo que luta contra demônios. Ela é lançada em um mundo sobrenatural de vampiros, lobisomens e fadas, ao mesmo tempo em que sua mãe é sequestrada. Para salvá-la, Clary se junta a um grupo de jovens Caçadores de Sombras, enfrentando perigos e descobrindo segredos sobre seu próprio passado."</p>
+
+                        <div class="Curiosidade">
+                            <h3 class="detalhes_paragrafo">Por quê assistir? </h3>
+                            <p class="detalhes_paragrafo"> ⦿ Drama entre mundos diferentes</p>
+                            <p class="detalhes_paragrafo"> ⦿ Conflitos pessoais profundos</p>
+                            <p class="detalhes_paragrafo"> ⦿ Relações e sacrifícios constantes</p>
+                        </div>
+
+                        <div class="Streaming">
+                            <h3 class="detalhes_paragrafo">Onde assistir? </h3>
+                            <a href="https://www.netflix.com" target="_blank" aria-label="Abrir Netflix">
+                                <img src="img/Netflix_icon.svg.png" alt="Netflix" width="50px" height="50px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="detalhe_genero">
+                <h2 class="detalhes_titulo" id="suspense">SUSPENSE</h2>
+                
+                <div class="detalhes_img_sinopse">
+                    
+                    <img class="imagem_detalhes" src="img/Stranger.jpeg" alt="Stranger">
+                    <div class="detalhes_sinopse">
+                        <h2 class="sinopse_titulo">Sinopse</h2>
+
+                        <p class="detalhes_paragrafo">"Stranger Things é uma série ambientada nos anos 80, onde o desaparecimento do jovem Will Byers em Hawkins, Indiana, desencadeia uma série de eventos sobrenaturais, revelando experimentos secretos do governo, portais para uma dimensão sombria (o Mundo Invertido) e uma garota com poderes telecinéticos chamada Onze (Eleven). A história acompanha os amigos de Will, sua mãe (Joyce), o chefe de polícia (Hopper) e a própria Onze, enquanto eles enfrentam monstros, conspirações e o perigo crescente do Mundo Invertido para desvendar a verdade e salvar a cidade."</p>
+
+                        <div class="Curiosidade">
+                            <h3 class="detalhes_paragrafo">Por quê assistir? </h3>
+                            <p class="detalhes_paragrafo"> ⦿ Drama de amizade e família</p>
+                            <p class="detalhes_paragrafo"> ⦿ Crescimento e amadurecimento doloroso</p>
+                            <p class="detalhes_paragrafo"> ⦿ Misterios constantes</p>
+                        </div>
+
+                        <div class="Streaming">
+                            <h3 class="detalhes_paragrafo">Onde assistir? </h3>
+                            <a href="https://www.netflix.com" target="_blank" aria-label="Abrir Netflix">
+                                <img src="img/Netflix_icon.svg.png" alt="Netflix" width="50px" height="50px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- HOVER DE SUGESTAO DE NOVAS SERIES-->
+    <section class="sugestao" id="sugestao">
+        <h2 class="sugestao_titulo"> Deixe abaixo a sua sugestão de série!</h2>
+        <input type="search" class="sugestao__pesquisa" placeholder="Insira o e-mail para receber o formulário de indicação">
+    </section>
+
+    <!-- MEIO DE CONTATO -->
+    <footer class="rodape">
+        <h1 class="titulo_rodape">Redes Para Contato</h1>
+       <ul class="redes">
+            <li class="lista_redes">
+                <a class="contato" 
+                    href="https://www.instagram.com/trautwein_bia/"
+                    target="_blank">
+                    <img class="icone" src="./img/instagram-1-svgrepo-com.svg" alt="logo Instagram" >
+                    Instagram
+                </a> 
+            </li>
+            <li class="lista_redes"> 
+                <a class="contato" 
+                    href="https://wa.me/5511952957627"
+                    target="_blank">
+
+                    <img class="icone" src="./img/whatsapp-svgrepo-com.svg" alt="Logo Whatshapp">
+                    Whatshapp
+                </a>
+            </li>
+            <li class="lista_redes">
+                <a class="contato" 
+                    href="https://www.linkedin.com/in/seuperfil/"
+                    target="_blank">
+
+                    <img class="icone" src="./img/linkedin-svgrepo-com.svg" alt="Logo Linkdin">
+
+                    Linkedin
+                </a>    
+            </li>
+            <li class="lista_redes">
+                <a class="contato" 
+                    href="https://github.com/seuusuario"
+                    target="_blank">
+
+                    <img class="icone" src="./img/github-142-svgrepo-com.svg" alt="Logo GitHub">
+                    GitHub
+                </a>
+            </li>
+        </ul> 
+    </footer> 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: 10,
+                slidesPerView: 3,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+            });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
