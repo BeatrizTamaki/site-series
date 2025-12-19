@@ -40,6 +40,10 @@
     padding-bottom: 1.5rem;
 }
 
+.detalhes_paragrafo-titulo{
+    color: var(--vermelho-claro);
+}
+
 @media (min-width: 768px) {
 
     .detalhes_img_sinopse{
